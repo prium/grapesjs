@@ -67,6 +67,7 @@
     "builder"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run build-all",
     "build-all": "run-s build:*",
     "build:js": "node node_modules/grapesjs-cli/dist/cli.js build --patch=false --targets=\"> 1%, ie 11, safari 8, not dead\" --statsOutput=\"stats.json\" --localePath=\"src/i18n/locale\"",
